@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#8d1733" />
+  <meta name="theme-color" content="#e53b86" />
   <title>Marens 6 Minuten</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="theme-frames.css" />
 </head>
 <body>
   <div class="ambient ambient-a" aria-hidden="true"></div>
@@ -22,7 +23,7 @@
           <p class="lead">Sechs Minuten, die den Tag nicht größer machen – sondern klarer.</p>
           <div class="progress-row" aria-label="Tagesfortschritt"><span class="status-dot" id="morningDot"></span><span>Morgen</span><span class="status-dot" id="eveningDot"></span><span>Abend</span></div>
         </div>
-        <div class="portrait-card parallax" data-speed="0.10"><img src="assets/maren-portrait.jpg" alt="Maren in einem roten Oberteil" /><div class="portrait-caption"><strong>Dein Raum.</strong><span>Ohne Leistung. Ohne Urteil.</span></div></div>
+        <div class="portrait-card parallax" data-speed="0.10"><img src="assets/maren-portrait.svg" alt="Maren in einem roten Oberteil" /><div class="portrait-caption"><strong>Dein Raum.</strong><span>Ohne Leistung. Ohne Urteil.</span></div></div>
       </div>
       <button class="quote-card reveal" id="quoteCard" type="button" aria-live="polite"><div class="quote-top"><span>SPRUCH DES TAGES</span><span class="quote-action">↻ neuer Impuls</span></div><blockquote id="quoteText"></blockquote><p>Tippen für den nächsten Gedanken</p></button>
       <div class="ritual-grid reveal">
@@ -33,7 +34,7 @@
     </section>
     <section class="view" data-view="journal">
       <div class="section-head reveal"><p class="eyebrow">DEIN INNERER RAUM</p><h1>Journal</h1><p class="lead">Was auftaucht, darf hier sein. Schreib nicht schön – schreib wahr.</p></div>
-      <div class="journal-layout reveal"><div class="journal-photo"><img src="assets/maren-wide.jpg" alt="Maren schaut auf ihr Smartphone" /></div><div class="journal-editor"><label>Titel <input id="journalTitle" placeholder="Optional" /></label><label>Was beschäftigt dich gerade? <textarea id="journalText" rows="9" placeholder="Fang mit einem Satz an …"></textarea></label><button class="primary" id="saveJournal" type="button">Eintrag speichern</button><p class="save-note" id="journalStatus"></p></div></div>
+      <div class="journal-layout reveal"><div class="journal-photo"><img src="assets/maren-portrait.svg" alt="Maren in einer ruhigen Porträtaufnahme" /></div><div class="journal-editor"><label>Titel <input id="journalTitle" placeholder="Optional" /></label><label>Was beschäftigt dich gerade? <textarea id="journalText" rows="9" placeholder="Fang mit einem Satz an …"></textarea></label><button class="primary" id="saveJournal" type="button">Eintrag speichern</button><p class="save-note" id="journalStatus"></p></div></div>
       <div class="history reveal"><div class="section-row"><h2>Letzte Einträge</h2><span id="entryCount"></span></div><div id="journalHistory"></div></div>
     </section>
     <section class="view" data-view="verlauf">
@@ -42,7 +43,7 @@
     <section class="view" data-view="insights">
       <div class="section-head reveal"><p class="eyebrow">MUSTER STATT URTEILE</p><h1>Insights</h1><p class="lead">Kleine Hinweise aus deinen Einträgen – bewusst zurückhaltend und ohne Diagnosen.</p></div>
       <div class="insight-grid reveal"><article><span>7-Tage-Stimmung</span><strong id="avgMood">–</strong><p>Durchschnitt deiner gespeicherten Check-ins.</p></article><article><span>Rituale</span><strong id="ritualCount">0</strong><p>Abgeschlossene Morgen- und Abendroutinen.</p></article><article><span>Journal</span><strong id="journalCount">0</strong><p>Gedanken, die du bewusst festgehalten hast.</p></article></div>
-      <article class="portrait-insight reveal"><img src="assets/maren-wide.jpg" alt="Maren in einer ruhigen Innenraumszene" /><div><p class="eyebrow">PSYCHOLOGISCHER RAHMEN</p><h2>Erst regulieren, dann reflektieren.</h2><p>Die App führt morgens von Wahrnehmung zu Handlung und abends von Ereignissen zu Bedeutung. Tiefe Fragen erscheinen seltener, damit Reflexion nicht zur Daueranalyse wird.</p><small>Kein Therapieersatz. Bei ernsthaften psychischen Belastungen ist professionelle Unterstützung geeigneter.</small></div></article>
+      <article class="portrait-insight reveal"><img src="assets/maren-portrait.svg" alt="Maren in einer ruhigen Porträtaufnahme" /><div><p class="eyebrow">PSYCHOLOGISCHER RAHMEN</p><h2>Erst regulieren, dann reflektieren.</h2><p>Die App führt morgens von Wahrnehmung zu Handlung und abends von Ereignissen zu Bedeutung. Tiefe Fragen erscheinen seltener, damit Reflexion nicht zur Daueranalyse wird.</p><small>Kein Therapieersatz. Bei ernsthaften psychischen Belastungen ist professionelle Unterstützung geeigneter.</small></div></article>
     </section>
     <dialog id="ritualDialog"><form method="dialog" class="dialog-shell" id="ritualForm"><div class="dialog-head"><div><p class="eyebrow" id="ritualEyebrow"></p><h2 id="ritualTitle"></h2></div><button class="close" value="cancel" aria-label="Schließen">×</button></div><div id="ritualFields"></div><button class="primary" id="saveRitual" value="default">Speichern & abschließen</button></form></dialog>
   </main>
